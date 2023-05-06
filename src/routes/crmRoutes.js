@@ -1,20 +1,20 @@
-const routes =  (app) => {
-    app.route('./contact')
-    .get((req, res) =>
-      res.send('GET request successful!')
+const routes = (app) => {
+    app.route('/contact')
+    .get((req,res) =>
+        res.send('GET request sucessful!')
     )
 
     .post((req, res) =>
-    res.send('POST request successful')
+        res.send('POST request sucessful!')
     )
 
     app.route('/contact/:contactId')
     .put((req, res) =>
-    res.send('PUT request successful')
+        res.send('PUT request sucessful!')
     )
 
-    .delete((req, res) => 
-    res.send('DELETE request successful')
+    .delete((req, res) =>
+        res.send('DELETE request sucessful!')
     )
 }
 
